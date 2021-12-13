@@ -126,7 +126,10 @@ export default function Example() {
           )
         })}
       </div>
-      <div className='flex  w-1/2 mx-auto   '>
+      <div
+        style={{ width: '40%', paddingTop: '2rem' }}
+        className='flex  w-1/2 mx-auto   '
+      >
         <div className={`${currentstep === 0 ? 'hidden' : 'pt-5'}`}>
           <Button
             color='indigo'

@@ -16,7 +16,7 @@ import * as yup from 'yup'
 // const visaRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/
 const Step2 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
   return (
-    <div className='mt-8 w-1/3'>
+    <div style={{ width: '50%' }} className='mt-8 '>
       <Formik
         initialValues={{
           nameOnCard: prevvalues.nameOnCard,

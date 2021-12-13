@@ -15,7 +15,7 @@ import * as yup from 'yup'
 // }
 const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
   return (
-    <div className='mt-8 w-1/3'>
+    <div style={{ width: '50%' }} className='mt-8 '>
       <Formik
         initialValues={{
           firstName: prevvalues.firstName,

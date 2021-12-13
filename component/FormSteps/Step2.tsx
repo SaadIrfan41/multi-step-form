@@ -61,8 +61,8 @@ const Step2 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
           isSubmitting,
         }) => (
           <div className='max-w-3xl mx-auto '>
-            <Card>
-              <CardBody>
+            <div>
+              <div>
                 <h1 className='flex justify-center font-semibold text-lg'>
                   Payment Details
                 </h1>
@@ -145,8 +145,8 @@ const Step2 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                     </Button>
                   </div>
                 </form>
-              </CardBody>
-            </Card>
+              </div>
+            </div>
           </div>
         )}
       </Formik>

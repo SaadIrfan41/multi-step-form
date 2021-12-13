@@ -70,8 +70,8 @@ const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
           isSubmitting,
         }) => (
           <div className='max-w-3xl mx-auto '>
-            <Card className=' '>
-              <CardBody>
+            <div className=' '>
+              <div>
                 <h1 className='flex justify-center font-semibold text-lg'>
                   Shipping address
                 </h1>
@@ -191,8 +191,8 @@ const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                     </Button>
                   </div>
                 </form>
-              </CardBody>
-            </Card>
+              </div>
+            </div>
           </div>
         )}
       </Formik>

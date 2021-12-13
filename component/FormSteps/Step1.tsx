@@ -15,7 +15,7 @@ import * as yup from 'yup'
 // }
 const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
   return (
-    <div className='mt-8 w-screen'>
+    <div className='mt-8 w-1/3'>
       <Formik
         initialValues={{
           firstName: prevvalues.firstName,
@@ -69,131 +69,123 @@ const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
 
           isSubmitting,
         }) => (
-          <div className='max-w-3xl mx-auto '>
-            <div className=' '>
-              <div>
-                <h1 className='flex justify-center font-semibold text-lg'>
-                  Shipping address
-                </h1>
-                <form onSubmit={handleSubmit}>
-                  <div className='pb-5 pt-8'>
-                    <InputIcon
-                      name='firstName'
-                      defaultValue={prevvalues.firstName}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      type='text'
-                      color='indigo'
-                      size='regular'
-                      outline={true}
-                      placeholder='First Name'
-                      iconFamily='material-icons'
-                      iconName='account_circle'
-                      error={
-                        errors.firstName &&
-                        touched.firstName &&
-                        errors.firstName
-                      }
-                      success={
-                        !errors.firstName && touched.firstName ? 'Valid' : ''
-                      }
-                    />
-                  </div>
+          <Card className=''>
+            <CardBody>
+              <h1 className='flex justify-center font-semibold text-lg'>
+                Shipping address
+              </h1>
+              <form onSubmit={handleSubmit}>
+                <div className='pb-5 pt-8'>
+                  <InputIcon
+                    name='firstName'
+                    defaultValue={prevvalues.firstName}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    type='text'
+                    color='indigo'
+                    size='regular'
+                    outline={true}
+                    placeholder='First Name'
+                    iconFamily='material-icons'
+                    iconName='account_circle'
+                    error={
+                      errors.firstName && touched.firstName && errors.firstName
+                    }
+                    success={
+                      !errors.firstName && touched.firstName ? 'Valid' : ''
+                    }
+                  />
+                </div>
 
-                  <div className='pb-5 pt-2'>
-                    <InputIcon
-                      name='lastName'
-                      defaultValue={prevvalues.lastName}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      type='text'
-                      color='indigo'
-                      size='regular'
-                      outline={true}
-                      placeholder='Last Name'
-                      iconFamily='material-icons'
-                      iconName='account_circle'
-                      error={
-                        errors.lastName && touched.lastName && errors.lastName
-                      }
-                      success={
-                        !errors.lastName && touched.lastName ? 'Valid' : ''
-                      }
-                    />
-                  </div>
-                  <div className='pb-5 pt-2'>
-                    <InputIcon
-                      name='email'
-                      defaultValue={prevvalues.email}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      type='email'
-                      color='indigo'
-                      size='regular'
-                      outline={true}
-                      placeholder='Email'
-                      iconFamily='material-icons'
-                      iconName='subtitles'
-                      error={errors.email && touched.email && errors.email}
-                      success={!errors.email && touched.email ? 'Valid' : ''}
-                    />
-                  </div>
-                  <div className='pb-5 pt-2'>
-                    <InputIcon
-                      name='adress'
-                      defaultValue={prevvalues.adress}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      type='text'
-                      color='indigo'
-                      size='regular'
-                      outline={true}
-                      placeholder='Adress'
-                      iconFamily='material-icons'
-                      iconName='local_shipping'
-                      error={errors.adress && touched.adress && errors.adress}
-                      success={!errors.adress && touched.adress ? 'Valid' : ''}
-                    />
-                  </div>
-                  <div className='pb-5 pt-2'>
-                    <InputIcon
-                      name='zipcode'
-                      defaultValue={prevvalues.zipcode}
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      type='number'
-                      color='indigo'
-                      size='regular'
-                      outline={true}
-                      placeholder='ZipCode'
-                      iconFamily='material-icons'
-                      iconName='subtitles'
-                      error={
-                        errors.zipcode && touched.zipcode && errors.zipcode
-                      }
-                      success={
-                        !errors.zipcode && touched.zipcode ? 'Valid' : ''
-                      }
-                    />
-                  </div>
+                <div className='pb-5 pt-2'>
+                  <InputIcon
+                    name='lastName'
+                    defaultValue={prevvalues.lastName}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    type='text'
+                    color='indigo'
+                    size='regular'
+                    outline={true}
+                    placeholder='Last Name'
+                    iconFamily='material-icons'
+                    iconName='account_circle'
+                    error={
+                      errors.lastName && touched.lastName && errors.lastName
+                    }
+                    success={
+                      !errors.lastName && touched.lastName ? 'Valid' : ''
+                    }
+                  />
+                </div>
+                <div className='pb-5 pt-2'>
+                  <InputIcon
+                    name='email'
+                    defaultValue={prevvalues.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    type='email'
+                    color='indigo'
+                    size='regular'
+                    outline={true}
+                    placeholder='Email'
+                    iconFamily='material-icons'
+                    iconName='subtitles'
+                    error={errors.email && touched.email && errors.email}
+                    success={!errors.email && touched.email ? 'Valid' : ''}
+                  />
+                </div>
+                <div className='pb-5 pt-2'>
+                  <InputIcon
+                    name='adress'
+                    defaultValue={prevvalues.adress}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    type='text'
+                    color='indigo'
+                    size='regular'
+                    outline={true}
+                    placeholder='Adress'
+                    iconFamily='material-icons'
+                    iconName='local_shipping'
+                    error={errors.adress && touched.adress && errors.adress}
+                    success={!errors.adress && touched.adress ? 'Valid' : ''}
+                  />
+                </div>
+                <div className='pb-5 pt-2'>
+                  <InputIcon
+                    name='zipcode'
+                    defaultValue={prevvalues.zipcode}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    type='number'
+                    color='indigo'
+                    size='regular'
+                    outline={true}
+                    placeholder='ZipCode'
+                    iconFamily='material-icons'
+                    iconName='subtitles'
+                    error={errors.zipcode && touched.zipcode && errors.zipcode}
+                    success={!errors.zipcode && touched.zipcode ? 'Valid' : ''}
+                  />
+                </div>
 
-                  <div className='flex justify-center pt-2'>
-                    <Button
-                      type='submit'
-                      size='lg'
-                      onSubmit={handleSubmit}
-                      color='indigo'
-                      ripple='dark'
-                      disabled={isSubmitting}
-                      // onClick={() => setcurrentstep(1)}
-                    >
-                      Next Step
-                    </Button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+                <div className='flex justify-center pt-2'>
+                  <Button
+                    type='submit'
+                    size='lg'
+                    onSubmit={handleSubmit}
+                    color='indigo'
+                    ripple='dark'
+                    disabled={isSubmitting}
+                    // onClick={() => setcurrentstep(1)}
+                  >
+                    Next Step
+                  </Button>
+                </div>
+              </form>
+            </CardBody>
+          </Card>
         )}
       </Formik>
     </div>

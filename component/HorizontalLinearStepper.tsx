@@ -62,7 +62,7 @@ export default function Example() {
 
   return (
     <div className='w-screen '>
-      <div className='flex w-1/2 justify-evenly mx-auto lg:border-t lg:border-b lg:border-gray-200 '>
+      <div className='flex w-1/2 justify-center mx-auto lg:border-t lg:border-b lg:border-gray-200 '>
         {steps.map((step, index) => {
           return (
             <Fragment key={index}>
@@ -142,7 +142,7 @@ export default function Example() {
           </Button>
         </div>
       </div>
-      <div className='flex justify-center'>
+      <div className='flex mx-auto max-w-7xl justify-center'>
         {currentstep === 0 ? (
           <Step1
             prevvalues={values}

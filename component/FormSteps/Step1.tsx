@@ -75,7 +75,7 @@ const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                 Shipping address
               </h1>
               <form onSubmit={handleSubmit}>
-                <div className='pb-5 pt-8'>
+                <div style={{ paddingBottom: '1.25rem' }} className=' pt-8'>
                   <InputIcon
                     name='firstName'
                     defaultValue={prevvalues.firstName}
@@ -97,7 +97,7 @@ const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                   />
                 </div>
 
-                <div className='pb-5 pt-2'>
+                <div style={{ paddingBottom: '1.25rem' }} className=' pt-2'>
                   <InputIcon
                     name='lastName'
                     defaultValue={prevvalues.lastName}
@@ -118,7 +118,7 @@ const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                     }
                   />
                 </div>
-                <div className='pb-5 pt-2'>
+                <div style={{ paddingBottom: '1.25rem' }} className=' pt-2'>
                   <InputIcon
                     name='email'
                     defaultValue={prevvalues.email}
@@ -135,7 +135,7 @@ const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                     success={!errors.email && touched.email ? 'Valid' : ''}
                   />
                 </div>
-                <div className='pb-5 pt-2'>
+                <div style={{ paddingBottom: '1.25rem' }} className=' pt-2'>
                   <InputIcon
                     name='adress'
                     defaultValue={prevvalues.adress}
@@ -152,7 +152,7 @@ const Step1 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                     success={!errors.adress && touched.adress ? 'Valid' : ''}
                   />
                 </div>
-                <div className='pb-5 pt-2'>
+                <div style={{ paddingBottom: '1.25rem' }} className=' pt-2'>
                   <InputIcon
                     name='zipcode'
                     defaultValue={prevvalues.zipcode}

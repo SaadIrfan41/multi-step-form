@@ -66,7 +66,7 @@ const Step2 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                 Payment Details
               </h1>
               <form onSubmit={handleSubmit}>
-                <div className='pb-5 pt-8'>
+                <div style={{ paddingBottom: '1.25rem' }} className=' pt-8'>
                   <InputIcon
                     name='nameOnCard'
                     defaultValue={prevvalues.nameOnCard}
@@ -90,7 +90,7 @@ const Step2 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                   />
                 </div>
 
-                <div className='pb-5 pt-2'>
+                <div style={{ paddingBottom: '1.25rem' }} className=' pt-2'>
                   <InputIcon
                     name='cardNumber'
                     defaultValue={prevvalues.cardNumber}
@@ -113,7 +113,7 @@ const Step2 = ({ setvalues, setcurrentstep, prevvalues }: any) => {
                     }
                   />
                 </div>
-                <div className='pb-5 pt-2'>
+                <div style={{ paddingBottom: '1.25rem' }} className=' pt-2'>
                   <InputIcon
                     name='cvv'
                     defaultValue={prevvalues.cvv}
